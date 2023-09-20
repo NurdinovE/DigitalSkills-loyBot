@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.headerContainer{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.leftSide{
+    display: flex;
+    align-items: baseline;
+}
+.headerLogo{
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 1000;
+    line-height: 23px;
+    letter-spacing: 1.0000001192092896px;
+}
+.headerLogo a{
+    text-decoration: none;
+    color: #121212;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .menuItem{
+
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.5000000596046448px;
+    list-style-type: none;
+    margin-left: 30px;
+    transition: 0.3s;
+
+}
+.menu .menuItem .itemLink{
+    color: #21383E;
+    text-decoration: none;
+}
+.menuItem:hover{
+    scale: 1.1;
+    transition: 0.3s;
+    .itemLink{
+        color: black;
+    }
+}
+.profileContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.profileInformation{
+    width: 50%;
+}
+address a{
+    text-decoration: none;
+    color: black;
+}
+.profileAvatar{
+    width: 30%;
+}
+.circle {
+     line-height: 0;		/* remove line-height */
+     display: block;	/* circle wraps image */
+     margin: 0 auto 30px ;
+     border: 4px solid rgba(200,200,200,0.4);
+     border-radius: 50%;	/* relative value */
+     /*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+     height: 160px;
+     width: 160px;
+
+ }
+.circle img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.botBtn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 110px;
+    height: 100px;
+}
+.botBtn img {
+    width: 100%;
+    height: 100%;
+}
+.botModalHeader{
+    display: flex;
+    align-items: center;
+}
+.botModalHeader .botName{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+}
+.botModalHeader img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.botSettings {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+.botSettings img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#chat-messages {
+    max-height: 450px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+#chat-messages::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a4a4a4;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #fff;
+    color: #000;
+    text-align: right;
+    border: 1px solid #f1f1f1;
+}
+
+.bot {
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #777;
+}
+.chat-input{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.btnChatInput{
+    width: 80%;
+}
+.botChatBtn{
+    width: 18%;
+}
+.botStatus{
+    top: 75px;
+    right: 10px;
+}
+.botWorkTime{
+    font-size: 12px;
+    font-family: Poppins;
+    text-align: center;
+    color: #808080FF;
+}
+.date-selector {
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="date"] {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.statsTitle{
+    font-family: 'Poppins';
+}
+.chart{
+    margin-top: 50px;
+}
+.chart img{
+    width: 550px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.ticket-table th, .ticket-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.ticket-table th {
+    background-color: #f2f2f2;
+}
+
+.ticket-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ticket-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 560px) {
+    .profileContainer{
+        flex-wrap: wrap;
+    }
+    .profileAvatar{
+        width: 100%;
+    }
+    .profileInformation{
+        width: 100%;
+    }
+}

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LoyBOT</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="leftSide">
+                <div class="headerLogo">
+                    <a href="../index.html">LoyBOT</a>
+                </div>
+                <ul class="menu">
+                    <li class="menuItem"><a href="./pages/statistics.html" class="itemLink">Statistics panel</a></li>
+                    <li class="menuItem"><a href="./pages/tariff.html" class="itemLink">Tariff</a></li>
+                    <li class="menuItem"><a href="./pages/techsupport.html" class="itemLink">Technical support</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="profile">
+        <div class="container">
+            <div class="profileContainer">
+                <div class="profileAvatar">
+                    <a href="#" class="circle">
+                        <img src="./image/defAvatar.jpg" alt="Avatar">
+                    </a>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                </div>
+                <div class="profileInformation">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control" value="Erzhan" disabled>
+                        <input type="text" aria-label="Last name" class="form-control" value="Nurdinov" disabled>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" value="erzhany" placeholder="Username"
+                               aria-label="Username" aria-describedby="basic-addon1" disabled>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               value="nurdinoverzhan@gmail.com" disabled>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="companyName" class="form-label">Company</label>
+                        <input type="text" class="form-control" id="companyName" aria-describedby="companyName"
+                               value="Google" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="companyAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="companyAddress" aria-describedby="companyAddress"
+                               value="1600 Amphitheatre Parkway, Mountain View, CA  94043" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="companyPhone" class="form-label">Contacts</label>
+                        <input type="text" class="form-control" id="companyPhone" aria-describedby="companyPhone"
+                               value="650-253-0000, 650-253-0001" disabled>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Change information
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Profile edit Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">First and last name</span>
+                    <input type="text" aria-label="First name" class="form-control" value="Erzhan">
+                    <input type="text" aria-label="Last name" class="form-control" value="Nurdinov">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="edBasic-addon1">@</span>
+                    <input type="text" class="form-control" value="erzhany" placeholder="Username"
+                           aria-label="Username" aria-describedby="edBasic-addon1">
+                </div>
+
+                <div class="mb-3">
+                    <label for="editExampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="editExampleInputEmail1" aria-describedby="emailHelp"
+                           value="nurdinoverzhan@gmail.com">
+                    <div id="editEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="editCompanyName" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="editCompanyName" aria-describedby="companyName"
+                           value="Google">
+                </div>
+                <div class="mb-3">
+                    <label for="editCompanyAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="editCompanyAddress" aria-describedby="companyAddress"
+                           value="1600 Amphitheatre Parkway, Mountain View, CA  94043">
+                </div>
+                <div class="mb-3">
+                    <label for="editCompanyPhone" class="form-label">Contacts</label>
+                    <input type="text" class="form-control" id="editCompanyPhone" aria-describedby="companyPhone"
+                           value="650-253-0000, 650-253-0001">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- bot modal -->
+<button type="button" class="btn botBtn" data-bs-toggle="modal" data-bs-target="#botModal">
+    <img src="./icons/botAlex.jpg" alt="AlexBot">
+    <span class="position-absolute translate-middle p-2 bg-success border border-light rounded-circle botStatus" ></span>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="botModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="botModalHeader">
+                    <div class="botImg">
+                        <img src="./icons/botAlex.jpg" alt="bot Alex">
+                    </div>
+
+                    <div class="botName" id="exampleModalLabel">Alex</div>
+                    <a class="botSettings" href="/">
+                        <img src="./icons/setting.png" alt="bot settings">
+                    </a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="chat-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+                        <div class="message user">
+                            <div class="message-text">Привет, как дела?</div>
+                            <div class="message-time">12:34</div>
+                        </div>
+                        <div class="message bot">
+                            <div class="message-text">Привет! У меня все отлично.</div>
+                            <div class="message-time">12:35</div>
+                        </div>
+
+                    </div>
+                    <div class="chat-input">
+                        <input class="form-control btnChatInput" type="text" placeholder="Send a massage">
+                        <button type="button" class="btn btn-secondary botChatBtn">Send</button>
+                    </div>
+                    <span class="botWorkTime">12:00 20.09.2023</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
