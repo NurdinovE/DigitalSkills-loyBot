@@ -39,14 +39,80 @@
         </div>
     </div>
 </header>
-<div class="main">
+<main>
+    <div class="container">
+        <div class="tariff-details">
+            <h2>Текущий Тариф: Premium</h2>
+            <p>Дата начала действия: 01 сентября 2023</p>
+            <p>Дата окончания действия: 01 сентября 2024</p>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Change Tariff
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="newTariffModal">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-</div>
+        <div class="dialog change-tariff-dialog">
+            <h2>Выберите новый тариф и дополнительные функции</h2>
+            <!-- Форма выбора нового тарифа и функций -->
+        </div>
 
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Extend Tariff
+        </button>
 
+        <div class="modal fade" id="extendTariff" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="extendTariffModal">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog payment-dialog">
+            <h2>Оплата выбранного тарифа</h2>
+            <!-- Форма оплаты -->
+        </div>
 
-
+        <div class="tariff-description">
+            <h2>Описание Тарифа Premium</h2>
+            <p>Тариф Premium предоставляет следующие возможности:</p>
+            <ul>
+                <li>Неограниченный доступ к всем функциям</li>
+                <li>Поддержка по электронной почте 24/7</li>
+                <li>Ежемесячные обновления</li>
+            </ul>
+            <p>С текущим тарифом вы можете полностью наслаждаться всеми возможностями нашей платформы.</p>
+        </div>
+    </div>
+</main>
 
 <button type="button" class="btn botBtn" data-bs-toggle="modal" data-bs-target="#botModal">
     <img src=".././icons/botAlex.jpg" alt="AlexBot">

@@ -248,6 +248,37 @@ button {
     background-color: #e0e0e0;
 }
 
+.tariff-details {
+    margin: 20px;
+}
+
+.change-tariff-button, .extend-tariff-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.dialog {
+    display: none;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tariff-description {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
 @media (max-width: 560px) {
     .profileContainer{
         flex-wrap: wrap;
