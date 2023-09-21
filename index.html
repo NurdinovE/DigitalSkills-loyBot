@@ -16,79 +16,218 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>LoyBOT</title>
 </head>
-<body>
+<body class="mainPageBody">
 <header>
     <div class="container">
         <div class="headerContainer">
-            <div class="leftSide">
-                <div class="headerLogo">
-                    <a href="../index.html">LoyBOT</a>
-                </div>
-                <ul class="menu">
-                    <li class="menuItem"><a href="./pages/statistics.html" class="itemLink">Statistics panel</a></li>
-                    <li class="menuItem"><a href="./pages/tariff.html" class="itemLink">Tariff</a></li>
-                    <li class="menuItem"><a href="./pages/techsupport.html" class="itemLink">Technical support</a></li>
+            <div class="headerLogo">
+                <a href="./index.html"><img src="./icons/logo.png" alt="logo"></a>
+            </div>
+            <div>
+                <button type="button" class="btn btn-light"><a class="btn-link" href="./pages/personalarea.html">Login</a></button>
 
-                </ul>
             </div>
         </div>
     </div>
 </header>
+
 <main>
-    <section id="profile">
+    <section class="slogan">
         <div class="container">
-            <div class="profileContainer">
-                <div class="profileAvatar">
-                    <a href="#" class="circle">
-                        <img src="./image/defAvatar.jpg" alt="Avatar">
-                    </a>
-                    <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02">
-                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            <div class="sloganText">
+                Повышение лояльности ваших
+                сотрудников – задача нашего бота!
+            </div>
+            <div class="notifyInput">
+                <div class="notifyAnim">
+                    <img src="./image/анимация.gif" alt="">
+                </div>
+                <input type="email" name="email">
+                <button>
+                    Notify me
+                </button>
+            </div>
+
+        </div>
+        <div class="mascot firstMas">
+            <img src="./image/маскот2.png" alt="">
+        </div>
+    </section>
+    <section class="botInfo">
+        <div class="mascot secondMas">
+            <img src="./image/маскот3.png" alt="">
+        </div>
+        <div class="container">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                            Услуги персонального Чат-бота компании (каждая функция имеет свою
+                            пиктограмму):
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Функция приятеля – бот поможет вашим сотрудникам
+                            ориентироваться на новом месте. Подскажет о важных правилах,
+                            местах, возможностях. Проследит, что бы сотрудник не забыл о
+                            важных моментах.
+                            Внутренняя валюта – каждый сотрудник получает личный счет и
+                            возможность зарабатывать валюту и тратить ее во внутреннем
+                            магазине.
+                            Функция оповещения – индивидуальная и/или массовая рассылка
+                            важной информации со сбором короткой реакции.
+                            Функция связи с наставником – бот поможет установить связь между
+                            новым сотрудником и его наставником, напомнит вовремя о
+                            контрольных точках и соберет обратную связь.
+                        </div>
                     </div>
                 </div>
-                <div class="profileInformation">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">First and last name</span>
-                        <input type="text" aria-label="First name" class="form-control" value="Erzhan" disabled>
-                        <input type="text" aria-label="Last name" class="form-control" value="Nurdinov" disabled>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                            Использование бота позволяет:
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Обеспечить оперативный персональный
+                            доступ сотруднику к корпоративной информации, в игровой форме привить
+                            корпоративную культуру, обеспечить ощущение постоянного контакта с
+                            руководством, дать больше возможностей для самореализации. Фото
+                            интерфейса диалога с ботом с разными фонами в чате: уведомление,
+                            напоминание, очень важное неоднократное напоминание, поздравление,
+                            обычное. Фоны должны меняться при прокрутке страницы.
+                        </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" value="erzhany" placeholder="Username"
-                               aria-label="Username" aria-describedby="basic-addon1" disabled>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                            Разработка индивидуальных функций
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Для подключения бота не требуется особых технических возможностей.
+                            Вся работа будет организована на нашем облаке. Для начала достаточно
+                            выбрать подходящий тариф и можно начинать! Обратите внимание, что есть
+                            пробный вариант на 30 дней!
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               value="nurdinoverzhan@gmail.com" disabled>
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="companyName" class="form-label">Company</label>
-                        <input type="text" class="form-control" id="companyName" aria-describedby="companyName"
-                               value="Google" disabled>
-                    </div>
-                    <div class="mb-3">
-                        <label for="companyAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="companyAddress" aria-describedby="companyAddress"
-                               value="1600 Amphitheatre Parkway, Mountain View, CA  94043" disabled>
-                    </div>
-                    <div class="mb-3">
-                        <label for="companyPhone" class="form-label">Contacts</label>
-                        <input type="text" class="form-control" id="companyPhone" aria-describedby="companyPhone"
-                               value="650-253-0000, 650-253-0001" disabled>
-                    </div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Change information
-                    </button>
                 </div>
             </div>
         </div>
+        <div class="mascot thirdMas">
+            <img src="./image/маскот1.png" alt="">
+        </div>
     </section>
+    <section class="tariff">
+        <div class="container">
+            <div class="tariffBody">
+                <div class="aboutTariff">
+                    <div class="tariffTitle">
+                        Тарифы:
+                    </div>
+                    <div class="tariffBoxes">
+                        <div class="tariffBox1">
+                            <div class="tariffBoxTitle">
+                                Пробный <br>на 30 дней.
+                            </div>
+                            <div class="tariffBoxDescr">
+                                <strong>Ограничения:</strong> <br>
+                                5 сотрудников, один менеджер, без настройки <br>оформления, ограниченное число списков
+                                при<br>
+                                работе с виртуальной валютой.
+                            </div>
+                        </div>
+                        <div class="tariffBox2">
+                            <div class="tariffBoxTitle">
+                                Базовый <br> тариф.
+                            </div>
+                            <div class="tariffBoxDescr">
+                                Стоимость 100 р в месяц
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aboutFunc">
+                    <div class="tariffTitle">
+                        Функции:
+                    </div>
+                    <div class="funcBoxes">
+                        <div class="funcBox">
+                            <div class="funcBoxTitle">
+                                Функция: <br>
+                                Приятель помощник.
+                            </div>
+                            <div class="funcBoxDescr">
+                                <strong>Оповещение и приятель-справочник. </strong> <br>
+                                Дополнительная функция. <br>
+                                стоимость +100р к базовому тарифу.
+                            </div>
+                        </div>
+                        <div class="funcBox">
+                            <div class="funcBoxTitle">
+                                Функция: <br>
+                                Внутреняя валюта.
+                            </div>
+                            <div class="funcBoxDescr">
+                                Дополнительная функция. <br>
+                                стоимость +100р к базовому тарифу.
+                            </div>
+                        </div>
+                        <div class="funcBox">
+                            <div class="funcBoxTitle">
+                                Функция: <br>
+                                Наставник.
+                            </div>
+                            <div class="funcBoxDescr">
+                                Дополнительная функция. <br>
+                                стоимость +100р к базовому тарифу.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mascot fourthMas">
+            <img src="./image/маскот4.png" alt="">
+        </div>
+    </section>
+
 </main>
+
+<footer>
+    <div class="footerForm">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="footerFormPhone" placeholder="+8 456 45 45 45">
+        </div>
+        <button type="button" class="btn btn-light"><a class="btn-link" href="#">Отправить</a></button>
+
+    </div>
+    <div class="contact-info">
+        <p>Контакты:</p>
+        <p>г. Казань, ул. Галеева 3А, +7 777 77 77 77</p>
+        <p><a href="mailto:info@loybot.ru">info@loybot.ru</a></p>
+    </div>
+</footer>
+
 
 <!-- Profile edit Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -146,7 +285,7 @@
 <!-- bot modal -->
 <button type="button" class="btn botBtn" data-bs-toggle="modal" data-bs-target="#botModal">
     <img src="./icons/botAlex.jpg" alt="AlexBot">
-    <span class="position-absolute translate-middle p-2 bg-success border border-light rounded-circle botStatus" ></span>
+    <span class="position-absolute translate-middle p-2 bg-success border border-light rounded-circle botStatus"></span>
 </button>
 
 <!-- Modal -->
@@ -253,7 +392,6 @@
         </div>
     </div>
 </div>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
